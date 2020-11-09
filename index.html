@@ -1,201 +1,339 @@
 <!DOCTYPE html>
-<html>
-<title>The Unbranded</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/reset.css">
-<script src="https://kit.fontawesome.com/4ca032af7b.js" crossorigin="anonymous"></script>
-<style>
-/*
-body {
-	width: 360px;
-	border: 1px black solid;
-	margin: auto;
-	
-}
-.container {	
-	background-image: linear-gradient(#f1e8e2, #f25430);
-	height: 640px;
-	overflow: scroll;
-	
-}
-h1 {display: none;}
-img {max-width: 360px;}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unbranded</title>
 
-.fa-bars {font-size: 2em;
-color: white;}
-
-/******** NOT STICKY  ********
-.nav {float: right;
-  padding-right: 1em;
-  }
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile-layout.css">
+  <link rel="stylesheet" href="css/desktop-layout.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lzh5gbk.css">
   
-.home {float: left;
-  margin-top: .5em;
-  padding-left: 1em;
-  color: white;
-}
+  <script src="https://kit.fontawesome.com/fb44934dbd.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
 
+</head>
 
-/******** STICKY  ********/
-/*.nav {z-index: 99;
-position: absolute;
-right: 0;
-top: 0;
-padding-right: 3em;
-}
-
-.home {z-index: 99;
-position: absolute;
-left: 0;
-top: .5em;
-padding-left: 3em;
-
-}
-
-
-
-a {color: white;
-text-decoration: none;
-font-weight: bold;}
-
-.bio, p {margin-bottom: 1em;}
-.headshot {width: 180px;
-height: 180px;
-border-radius: 50%;}
-.footer {vertical-align: bottom;
-
-  width: 360px;
-  bottom: 20px;
-  text-align: center;
-  margin: auto;
-}
-*/
-</style>
 <body>
 
-<div class="container">
+  <header>
 
-<a href="#" class="home">HOME</a>
-<div class="nav"><i class="fas fa-bars"></i></div>
+    <div class="mobile-nav mobile-nav__wrapper desk-nav desk-nav__wrapper">
 
-<div>
-  <h1>The Unbranded</h1>
-  <img src="images/hero-1.png" alt="The Unbranded logo" width="360px">
-</div>
 
-<div class="mission">
-<h2>MISSION</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-  mollit anim id est laborum.</p>
-  
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-  mollit anim id est laborum.</p>
-</div>
+      <p><a href="#" class="home">HOME</a></p>
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+    </div>
+    <div class="header__logo">
+      <img class="header__logo__img" src="images/Asset_1.svg" alt="The Unbranded Logo">
+      <img class="header__logo__img__2" src="images/the-unbranded-logo.png" alt="The Unbranded Logo">
+    </div>
 
-<div class="work">
-<h2>OUR WORK</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-  mollit anim id est laborum.</p>
-</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#mission">MISSION</a></li>     
+        <li><a href="#work">OUR WORK</a></li>
+        <li><a href="#social-justice">SOCIAL JUSTICE</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
 
-<div class="social-justice">
-<h2>SOCIAL JUSTICE</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-  mollit anim id est laborum.</p>
-</div>
+  </header>
 
-<div class="team">
-<h2>TEAM</h2>
-	<div class="bio">                        
-  <h2>Heather J. Randolph</h2>
-  <h3>Web Developer</h3>
-  <div>
-  <img src="images/cat1.jpg" alt="headshot placeholder" class="headshot" width="180px">
-  </div>
-  <div>
-  	<ul>
-  		<li>Social 1</li>
-  		<li>Social 2</li>
-  		<li>Social 3</li>
-  	</ul>
-  </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-  mollit anim id est laborum.</p>
-</div>
+  <main>
 
-<div class="bio">
-                        
-  <h2>Cory Runnells</h2>
-  <h3>Web Developer</h3>
-  <div>
-  <img src="images/cat1.jpg" alt="headshot placeholder" class="headshot" width="180px">
-  </div>
-  <div>
-  	<ul>
-  		<li>Social 1</li>
-  		<li>Social 2</li>
-  		<li>Social 3</li>
-  	</ul>
-  </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-  mollit anim id est laborum.</p>
-</div>
-</div>
+    <section class="container" id="mission">
+      <div class="mission">
+        <h2 class="mission__heading--first">MISSION</h2>
+        <p class="mission__text">Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company. Mission statement on ethos of company.. Make sure to include something about affordability and flat rates.</p>
+      </div>
+      </section>
+    <section class="container" id="mission">
+      <div class="about">
+        <h2>ABOUT</h2>
+        <p class="mission__text">General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail. General about of company, basically longer mission statement, more detail.</p>
+      </div>
+    </section>
 
-<div class="contact">
-<h2>Contact</h2>
-<p>We would love to hear from you! Fill out the form below and we'll get back to you as
-soon as possible.</p>
+    <section class="container" id="work">
+      <h2>OUR WORK</h2>
+      <h3>Project Name</h3>
+      <div class="project">
+        <div class="project__image">
+          <a href="#"><img src="images/cat1.jpg" alt=""></a>
+        </div>
+        <div class="project__body">
+          <div class="project__text">
+            <p>Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description</p>
+            <div class="project__team">
+              <p class="project__team__title">team members on project</p>
+              <div class="project__team__members">
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Project Name</h3>
+      <div class="project">
+        <div class="project__image">
+          <a href="#"><img src="images/cat1.jpg" alt=""></a>
+        </div>
+        <div class="project__body">
+          <div class="project__text">
+            <p>Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description</p>
+            <div class="project__team">
+              <p class="project__team__title">team members on project</p>
+              <div class="project__team__members">
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Project Name</h3>
+      <div class="project">
+        <div class="project__image">
+          <a href="#"><img src="images/cat1.jpg" alt=""></a>
+        </div>
+        <div class="project__body">
+          <div class="project__text">
+            <p>Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description</p>
+            <div class="project__team">
+              <p class="project__team__title">team members on project</p>
+              <div class="project__team__members">
+                <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Project Name</h3>
+      <div class="project">
+        <div class="project__image">
+          <a href="#"><img src="images/cat1.jpg" alt=""></a>
+        </div>
+        <div class="project__body">
+          <div class="project__text">
+            <p>Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description Project description</p>
+            <div class="project__team">
+              <p class="project__team__title">team members on project</p>
+              <div class="project__team__members">
+                 <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                  <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+                <div class="project__team__members__link">
+                  <a href="#">team member</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<form action="#">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" placeholder="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" placeholder="Doe"><br>
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email" placeholder="John_Doe@example.com"><br>
-  <label for="request">What services are you interested in?
-  <br>Our non-exhaustive list of services includes: design, development, copywriting, video editing,
-  logo animation...</label><br>
-  <textarea id="request" name="request" rows="4" cols="35"></textarea>
-  <br>
-  <label for="conumber">How many people are in your company? (If this is a personal project, enter 0.)</label><br>
-  <input type="number" id="conumber" name="conumber"><br>
-  <label for="details">Please share any other details you would like to discuss about the project.</label><br>
-  <textarea id="details" name="details" rows="4" cols="35"></textarea>
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-</div>
+    <section class="container" id="social-justice">
+      <h2 class="social-justice__title">SOCIAL JUSTICE</h2>
+      <p class="social-justice__body">Statement on social justice, pro-bono work, incorporating this into the company ethos from the start. Statement on social justice, pro-bono work, incorporating this into the company ethos from the start. Statement on social justice, pro-bono work, incorporating this into the company ethos from the start. Statement on social justice, pro-bono work, incorporating this into the company ethos from the start. Statement on social justice, pro-bono work, incorporating this into the company ethos from the start.</p>
+      <h2 class="social-justice__resource__title">SOCIAL JUSTICE RESOURCE LINKS</h2>
+      <div class="social-justice__link">
+        <a class="social-justice__link__item" href="#">LINK</a>
+        <p class="social-justice__body">Description, why we support. Description, why we support. Description, why we support. Description, why we support. Description, why we support. Description, why we support. </p>
+      </div>
+      <div class="social-justice__link">
+        <a class="social-justice__link__item" href="#">LINK</a>
+        <p  class="social-justice__body">Description, why we support. Description, why we support. Description, why we support. Description, why we support. Description, why we support. Description, why we support. </p>
+      </div>
+      <div class="social-justice__link">
+        <a class="social-justice__link__item" href="#">LINK</a>
+        <p  class="social-justice__body">Description, why we support. Description, why we support. Description, why we support. Description, why we support. Description, why we support. Description, why we support. </p>
+      </div>
+    </section>
 
-<div class="footer">
-  <p><a href="mailto:contact@the-unbranded.com">contact@the-unbranded.com</a></p>
-</div>
-</div>
+    <section class="container" id="team">
+      <h2>THE TEAM</h2>
+      <p>Overview of team, how we collected ourselves and got together. Overview of team, how we collected ourselves and got together. Overview of team, how we collected ourselves and got together. Overview of team, how we collected ourselves and got together.</p>
+
+      <div class="team__member">
+        <div class="team__member__bio">
+        <h3 class="team__member__name">AMELITA LIJEK</h3>
+        <p class="team__member__description">Founder</p>
+        <p class="team__member__description">Business Ops and Design</p>
+
+          <span class="bio__img">
+            <img src="images/cat1.jpg" alt="Amelita Lijek">
+          </span>
+          </div>
+          <div class="bio__info">
+            <p>Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio Amelita bio</p>
+            <div class="bio__social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="team__member">
+        <div class="team__member__bio">
+        <h3 class="team__member__name">SARAH BELING</h3>
+        <p class="team__member__description">Founder Advisor</p>
+        <p class="team__member__description">Copywriting</p>
+
+          <span class="bio__img">
+            <img src="images/cat1.jpg" alt="Sarah Beling">
+          </span>
+        </div>
+          <div class="bio__info">
+            <p>Enamored at a young age with storytelling, Sarah tortured her family and friends throughout the 90s with re-worked 
+            revivals of classics like <em>The Wizard of Oz</em> and <em>Annie</em> (in which she gracefully accepted the title role). 
+            Sarah eventually moved to New York, attended NYU Tisch to study acting, threw out all of her clothing that wasn’t black, 
+            and developed a taste for bodega breakfast sandwiches. Sarah writes plays that range from thriller to 80s musical parody 
+            and is eager to help others tell their stories.</p>
+
+            <div class="bio__social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="team__member">
+        <div class="team__member__bio">
+        <h3 class="team__member__name">EMILY BRADSHAW</h3>
+        <p class="team__member__description">Video Editing</p>
+
+          <span class="bio__img">
+            <img src="images/cat1.jpg" alt="Emily Bradshaw">
+          </span>
+          </div>
+          <div class="bio__info">
+            <p>Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio</p>
+            <p>Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio Emily bio</p>
+            <div class="bio__social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="team__member">
+     
+      <div class="team__member__bio">
+        <h3 class="team__member__name">HEATHER RANDOLPH</h3>
+        <p class="team__member__description">Web Development</p>
+        
+          <span class="bio__img">
+            <img src="images/hjr_headshot.png" alt="Heather J. Randolph">
+          </span>
+         </div>
+          <div class="bio__info">
+            <p>Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio</p>
+			<p>Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio Heather bio</p>
+            <div class="bio__social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="team__member">
+        <div class="team__member__bio">
+        <h3 class="team__member__name">Jennifer Cameron</h3>
+        <p class="team__member__description">Web Development</p>
+
+          <span class="bio__img">
+            <img src="images/cat1.jpg" alt="Jennifer Cameron">
+          </span>
+          </div>
+          <div class="bio__info">
+            <p>Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio Jennifer bio</p>
+            <div class="bio__social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+   
+    <section class="container" id="contact">
+      <h2>CONTACT</h2>
+      <p>We would love to hear from you! Fill out the form below and we'll get back to you as
+      soon as possible.</p>
+
+      <form action="mailto:hjrandolph@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="John_Doe@example.com" required><br>
+
+        <label for="request"><span>What services are you interested in?</span>
+        <br>Our non-exhaustive list of services includes: design, development, copywriting, video editing,
+        logo animation...</label><br>
+        <textarea id="request" name="request" rows="4" cols="35" maxlength="6000" required></textarea><br>
+
+        <label for="conumber"><span>How many people are in your company?</span> <br>
+           If this is a personal project, enter 0.</label><br>
+        <input type="number" id="conumber" name="conumber"><br>
+        <label for="details">Please share any other details about the project that you'd like to discuss.</label><br>
+        <textarea id="details" name="details" rows="4" cols="35"></textarea>
+        <br><br>
+       <div class="btn-div"> <input type="submit" class="btn" value="Let's Do This!!"></div>
+      </form> 
+      
+    </section>
+
+
+    <footer>
+      <div class="footer">
+       <p> <a class="footer__email" href="mailto:contact@the-unbranded.com">contact@the-unbranded.com</a></p>
+      </div>
+    </footer>
+   
+
+  </main>
 
 </body>
 </html> 
