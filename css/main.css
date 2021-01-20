@@ -314,9 +314,9 @@ footer {
     text-align: center;
 }
 .project__team__members__link {
-	margin: 1em;
+	margin: 1.5em;
 	justify-content: space-evenly;
-	width: 40%;
+	
 }
     
 /******** TEAM ********/
