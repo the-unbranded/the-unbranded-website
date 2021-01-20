@@ -25,7 +25,7 @@ $(window).scroll(function() {  //update this so that the logo stops fading at ab
         $('.header__logo__img').css({
         opacity: function() {
             var elementHeight = $(this).height(),
-            opacity = ((elementHeight - scrollTop + 1200) / elementHeight);
+            opacity = ((elementHeight - scrollTop) / elementHeight);
             return opacity;
         }
     
