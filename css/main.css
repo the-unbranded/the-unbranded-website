@@ -166,6 +166,7 @@ ul {
     border-radius: 50%;
     background: #f2e9e3;
     filter: drop-shadow(0 0 30px #fff);
+    list-style: none;
 }    
 li a {
     text-decoration: none;
@@ -190,9 +191,9 @@ li a {
     display: block;
     background: white;
     height: 3px;
-    width: 1.75em;
+    width: 2em;
     border-radius: 3px;
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 600ms;
 }   
 /* Top Line */
 .hamburger::before {
