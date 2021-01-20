@@ -131,75 +131,9 @@ p {
 
 /* Navigation */  
 
-@media (min-width: 801px){
 
 
-  /* Navigation */
-  
-  .desk-nav {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 2.5em;
-      position: fixed;
-  }
-  
-  .desk-nav__wrapper {
-      width: 95%;
-      margin: 0 auto;
-  
-  }
-  
-  
-  
-  .nav {
-      position: fixed;
-    padding-top: 2em;
-    padding-bottom: 2em;
-      z-index: 1000;
-      top: 0;
-    width: 100%;
-  /*	background-color: rgba(241,86,49,.1); */
-  }
-  
-  ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      list-style: none;
-      
-  }
-  
-  li a {
-      color: #000000;
-      display: block;
-      padding-left: 1em;
-      padding-right: 1em;
-      text-decoration: none;
-      font-weight: 900;
-      text-shadow: 0 3px 6px #f9f2ed;
-  }
-  
-  li a:hover {
-      text-decoration: underline;
-      color: orange;
-      text-shadow: 1px 1px 3px #000; 
-  }
-  
-  .home {
-  
-    position: fixed;
-    padding: 2em;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 900;
-      text-shadow: 0 3px 6px #000000;
-    bottom: 2em;
-    right: 0;
-  }
-    
-  }
-
-@media (max-width: 800px){
+@media (max-width: 1199px){
 .mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -508,6 +442,74 @@ Desktop Styles
     header {
         height: 500px;
     }
+
+    
+
+
+      /* Navigation */
+      
+      .desk-nav {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 2.5em;
+          position: fixed;
+      }
+      
+      .desk-nav__wrapper {
+          width: 95%;
+          margin: 0 auto;
+      
+      }
+      
+      
+      
+      .nav {
+          position: fixed;
+        padding-top: 2em;
+        padding-bottom: 2em;
+          z-index: 1000;
+          top: 0;
+        width: 100%;
+      /*	background-color: rgba(241,86,49,.1); */
+      }
+      
+      ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          list-style: none;
+          
+      }
+      
+      li a {
+          color: #000000;
+          display: block;
+          padding-left: 1em;
+          padding-right: 1em;
+          text-decoration: none;
+          font-weight: 900;
+          text-shadow: 0 3px 6px #f9f2ed;
+      }
+      
+      li a:hover {
+          text-decoration: underline;
+          color: orange;
+          text-shadow: 1px 1px 3px #000; 
+      }
+      
+      .home {
+      
+        position: fixed;
+        padding: 2em;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 900;
+          text-shadow: 0 3px 6px #000000;
+        bottom: 2em;
+        right: 0;
+      }
+        
+      
    
 }
 
