@@ -27,10 +27,22 @@ $(window).scroll(function() {  //update this so that the logo stops fading at ab
             var elementHeight = $(this).height(),
             opacity = ((elementHeight - scrollTop) / elementHeight);
             return opacity;
+        
+        
         }
-    
+        
     
 });
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+        if (scroll >= 500) {
+            $(".hidden").removeClass("hidden");
+        }
+    if (scroll <= 500) {
+        $(".footer").addClass("hidden");
+        $(".home").addClass("hidden");
+    }
+})
 
     });
     
