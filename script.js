@@ -32,8 +32,6 @@ $(window).scroll(function() {  //update this so that the logo stops fading at ab
     
 });
 
-
-
-        
     });
+    
     

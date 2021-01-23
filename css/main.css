@@ -260,6 +260,7 @@ footer {
 	bottom: 2em;
 }
 .footer {
+    
     text-align: right;
     padding-right: 2em;
 }
@@ -267,7 +268,9 @@ footer {
     color: white;
     text-decoration: none;
 }
-
+.show {
+  display: block;
+}
 /******** MISSION ********/
 .container {
     width: 65%;
@@ -498,7 +501,7 @@ Desktop Styles
       }
       
       .home {
-      
+        
         position: fixed;
         padding: 2em;
           color: #fff;
