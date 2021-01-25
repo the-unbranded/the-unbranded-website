@@ -220,11 +220,23 @@ li a {
     transform: translateY(-3px) rotate(-90deg);
 }  
 .home {
-    padding-left: 2em;
+  /* This places HOME button in the top left*/
+  /*
+  padding-left: 2em;
     color: #fff;
     text-decoration: none;
     font-weight: 900;
     text-shadow: 0 3px 6px #000000;
+  */
+  /* This places HOME button in the bottom right */
+    position: fixed;
+        padding: 2em;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 900;
+          text-shadow: 0 3px 6px #000000;
+        bottom: 1em;
+        right: 0;
 }
 }
 /******** HEADER ********/
@@ -499,20 +511,13 @@ Desktop Styles
           color: orange;
           text-shadow: 1px 1px 3px #000; 
       }
-      
+     
       .home {
+        display: none;
         
-        position: fixed;
-        padding: 2em;
-          color: #fff;
-          text-decoration: none;
-          font-weight: 900;
-          text-shadow: 0 3px 6px #000000;
-        bottom: 2em;
-        right: 0;
       }
         
-      
+     
    
 }
 
