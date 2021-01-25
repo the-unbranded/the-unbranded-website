@@ -304,12 +304,15 @@ footer {
 .project__image {
     min-width: 35%;
     padding-bottom: 1em;
+    
 }
 .project__image img {
     height: 200px;
     width: 100%;
   	/*border-radius: 190px / 200px;*/
     object-fit: cover;
+    /* border: #f27d52 solid 1px;  HJR: Added the border to be able to see the box-shadow clearly */
+    box-shadow: 7px 7px 15px #ffffff;
 }
 .project__body {
     width: 100%;
