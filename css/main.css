@@ -137,7 +137,7 @@ p {
     padding-top: 2em;
     position: fixed;
 }
-.mobile-nav__wrapper {
+.mobile-nav-wrapper {
     width: 95%;
     margin: 0 auto;
 }
@@ -153,7 +153,7 @@ p {
 }
     
 /*Navigation open on click*/
-.nav--open {
+.nav-open {
     clip-path: circle(250% at top right);
 } 
 ul {
@@ -223,18 +223,18 @@ li a {
 }
 
 /******** HEADER ********/
-.header__logo {
+.header-logo {
     padding-top: 13.5em;
     display: flex;
     justify-content: center;
 }
-.header__logo__img {
+.header-logo-img {
     width: 95%;
     position: fixed; 
     z-index: -1;
 	opacity: 1
 }
-.header__logo__img__2 {
+.header-logo-img-2 {
     width: 95%;
     position: fixed; 
     z-index: -2;
@@ -258,7 +258,7 @@ footer {
     text-align: right;
     padding-right: 2em;
 }
-.footer__email {
+.footer-email {
     color: white;
     text-decoration: none;
 }
@@ -269,7 +269,7 @@ footer {
     margin: 0 auto;
 	padding-bottom: 5em;
 }
-.mission__heading--first {
+.mission-heading-first {
     padding-top: 13em;
 }
     
@@ -281,27 +281,27 @@ footer {
     flex-flow: row wrap;
     padding-bottom: 2em;
 }
-.project__image {
+.project-image {
     min-width: 35%;
     padding-bottom: 1em;
 }
-.project__image img {
+.project-image img {
     height: 200px;
     width: 100%;
   	/*border-radius: 190px / 200px;*/
     object-fit: cover;
 }
-.project__body {
+.project-body {
     width: 100%;
 }
-.project__text {
+.project-text {
     width: 100%;
 }
-.project__team {
+.project-team {
 	margin-top: 1em;
 	text-transform: uppercase;	
 }
-.project__team__title{
+.project-team-title{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -309,11 +309,11 @@ footer {
 	font-weight: bold;
 	margin-bottom: 1em;
 }
-.project__team__members {
+.project-team-members {
     display: block;
     text-align: center;
 }
-.project__team__members__link {
+.project-team-members-link {
 	margin: 1em;
 	justify-content: space-evenly;
 	width: 40%;
@@ -368,7 +368,7 @@ label {
 *********************************************************/
 @media only screen and (min-width: 768px) {
      /***** PROJECT *****/
-     .project__team__members {
+     .project-team-members {
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -376,17 +376,17 @@ label {
     }
 
     /***** TEAM *****/
-    .team__member {
+    .team-member {
       display: block;
     }
-    .bio__info {
+    .bio-info {
       padding-left: 0;
     }
-    .bio__info p {
+    .bio-info p {
       margin-top: 1em;
       margin-bottom: 1em;
     }
-    .bio__img img {
+    .bio-img img {
       max-width: 200px;
       /*border-radius: 50%;*/
       box-shadow: 3px 3px 10px #000000;
@@ -396,19 +396,19 @@ label {
       /*background-color: #f2a679; */
     }
     /* Making the bio images flip because I could.
-    .bio__img img:hover {
+    .bio-img img:hover {
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
       background-color: #f53737;
     }
     */
-    /*.team__member {
+    /*.team-member {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 2em;
     }*/
-    .bio__info {
+    .bio-info {
         padding-left: 2em;
     }
     .team-member-bio-img {
@@ -420,8 +420,51 @@ label {
     .team-member-flip {
       flex-flow: column;
     }
-    .bio__social {
+    .bio-social {
       text-align: center;
+    }
+
+    .desk-nav {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 2.5em;
+      position: fixed;
+    }
+    .desk-nav-wrapper {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .nav {
+      position: fixed;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      z-index: 1000;
+      top: 0;
+      width: 100%;
+      /*  background-color: rgba(241,86,49,.1); */
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none;
+    }
+    li a {
+      color: #000000;
+      display: block;
+      padding-left: 1em;
+      padding-right: 1em;
+      text-decoration: none;
+      font-weight: 900;
+      text-shadow: 0 3px 6px #F9F2ED;
+    }
+    li a:hover {
+      text-decoration: underline;
+      color: orange;
+      text-shadow: 1px 1px 3px #000; 
+    }
+    .home {
+      display: none;
     }
 
 }
