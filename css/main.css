@@ -214,6 +214,7 @@ li a {
 }  
 /* Top line gone */
 .open .hamburger::before {
+  transform: rotate(-90deg);
     opacity: 0;
 } 
 /* Bottom line rotates */
