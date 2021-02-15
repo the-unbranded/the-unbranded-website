@@ -232,13 +232,14 @@ li a {
   */
   /* This places HOME button in the bottom right */
     position: fixed;
-        padding: 2em;
+        
           color: #fff;
           text-decoration: none;
           font-weight: 900;
           text-shadow: 0 3px 6px #000000;
-        bottom: 1em;
-        right: 0;
+        bottom: 1.75em;
+        right: 1em;
+        
 }
 }
 /******** HEADER ********/
