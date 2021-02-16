@@ -89,251 +89,346 @@
 ========================================================================== */
 /* ---------- Base Styles ---------- */
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 header {
-    height: 300px;
+  height: 100vh;
 }
 body {
-    font-family: p22-underground, sans-serif;
-    font-size: .8rem;
-    font-style: normal;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    /* Dark to light gradient */
+  margin: 0;
+  padding: 0;
+  /* Dark to light gradient */
 	background: linear-gradient(#f25934 0%,  #f27d52 35%, #f2a488 65%, #f9f2ed 100%);
-    /* background: linear-gradient(#f9f2ed 0%,  #f2a488 35%, #f27d52 90%, #f25934 100%);*/
+  /* background: linear-gradient
+  (#f9f2ed 0%,  #f2a488 35%, #f27d52 90%, #f25934 100%);*/
 }
 img {
-    max-width: 90%;
+  max-width: 90%;
 }
 .mission, .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 h2,
-h3 {
-    font-weight: 900;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    text-transform: uppercase;
+h3,
+h4 {
+  font-family: "Bree", sans-serif;
+  font-weight: 700;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #433f3d;
 }
 h2 {
-    text-align: center;
+  font-size: 1.75em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1em;
 }
 p {
-    line-height: 1.5;
-    text-align: justify;
+  font-family: "omnes-pro", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+  color: #433f3d;
 }
 
 /* Navigation */  
 .mobile-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2em;
-    position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+  position: fixed;
 }
 .mobile-nav-wrapper {
-    width: 95%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 }
 .nav {
-    position: fixed;
-    text-align: center;
-    z-index: 1000;
-    top: 5%;
-    right: 5%;
-    /*Navigation hidden on mobile*/
-    clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 750ms;
+  position: fixed;
+  text-align: center;
+  z-index: 1000;
+  top: 5%;
+  right: 5%;
+  /*Navigation hidden on mobile*/
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 750ms;
 }
     
 /*Navigation open on click*/
 .nav-open {
-    clip-path: circle(250% at top right);
+  clip-path: circle(250% at top right);
 } 
 ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 450px;
-    border-radius: 50%;
-    background: #f2e9e3;
-    filter: drop-shadow(0 0 30px #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 450px;
+  border-radius: 50%;
+  background: #f2e9e3;
+  filter: drop-shadow(0 0 30px #fff);
 }    
 li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 1em;
-    font-weight: 900;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1em;
+  font-weight: 900;
 }
     
 /**** Hamburger Menu ****/
 .menu-toggle {
-    padding: 1em 0;
-    top: 1.5em;
-    left: 1.5em;
-    cursor: pointer;
+  padding: 1em 0;
+  top: 1.5em;
+  left: 1.5em;
+  cursor: pointer;
 }   
 /* Three horizontal lines for hamburger*/
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    content: '';
-    display: block;
-    background: white;
-    height: 3px;
-    width: 1.75em;
-    border-radius: 3px;
-    transition: all ease-in-out 300ms;
+  content: '';
+  display: block;
+  background: white;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 300ms;
 }   
 /* Top Line */
 .hamburger::before {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 /* Bottom Line */
 .hamburger::after {
-    transform: translateY(3px);
+  transform: translateY(3px);
 }   
 /* Middle Line rotates */
 .open .hamburger {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }  
 /* Top line gone */
 .open .hamburger::before {
-    opacity: 0;
+  opacity: 0;
 } 
 /* Bottom line rotates */
 .open .hamburger::after {
-    transform: translateY(-3px) rotate(-90deg);
+  transform: translateY(-3px) rotate(-90deg);
 }  
 .home {
-    padding-left: 2em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 900;
-    text-shadow: 0 3px 6px #000000;
+  /* This places the HOME button in the top left */
+  padding-left: 2em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  text-shadow: 0 3px 6px #000000;
+  margin: 0;
+
+  /* This places HOME button in the bottom right
+  position: fixed;
+  padding: 2em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  text-shadow: 0 3px 6px #000000;
+  bottom: 3em;
+  right: 0; */
 }
 
 /******** HEADER ********/
 .header-logo {
-    padding-top: 13.5em;
-    display: flex;
-    justify-content: center;
+  padding-top: 13.5em;
+  display: flex;
+  justify-content: center;
 }
 .header-logo-img {
-    width: 95%;
-    position: fixed; 
-    z-index: -1;
+  width: 95%;
+  position: fixed; 
+  z-index: -1;
 	opacity: 1
 }
 .header-logo-img-2 {
-    width: 95%;
-    position: fixed; 
-    z-index: -2;
+  width: 95%;
+  position: fixed; 
+  z-index: -2;
 	opacity: .33;
 }
 
 /******** FOOTER ********/
 footer {
-
-    width: 100%;
-    position: fixed;
-    padding-left: 2em;
-    padding-bottom: 2em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 900;
-    text-shadow: 0 3px 6px #000000;
+  width: 100%;
+  position: fixed;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  text-shadow: 0 3px 6px #000000;
 	bottom: 2em;
 }
 .footer {
-    text-align: right;
-    padding-right: 2em;
+  text-align: right;
+  padding-right: 2em;
 }
 .footer-email {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+.show {
+  display: block;
 }
 
 /******** MISSION ********/
 .container {
-    width: 65%;
-    margin: 0 auto;
+  width: 65%;
+  margin: 0 auto;
 	padding-bottom: 5em;
 }
 .mission-heading-first {
-    padding-top: 13em;
+  padding-top: 13em;
 }
     
 /******** PROJECT ********/
+#work h2 {
+  padding-bottom: 1.875rem;
+}
 .project {
-    display: flex;
-    justify-content: justify;
-    align-items: center;
-    flex-flow: row wrap;
-    padding-bottom: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 2em;
 }
 .project-image {
-    min-width: 35%;
-    padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 35%;
+  padding-bottom: 1em;
+}
+.project a {
+  text-align: center;
+  color: #433f3d;
+  text-decoration: none;
 }
 .project-image img {
-    height: 200px;
-    width: 100%;
-  	/*border-radius: 190px / 200px;*/
-    object-fit: cover;
+  height: 200px;
+  width: 100%;
+	/*border-radius: 190px / 200px; Makes image rounded*/
+  object-fit: cover;
+  /* HJR: Added the border to be able to see the box-shadow clearly JEC: f27d52 changed color to make it more subtle */
+  border: #bbb1ac solid 1px;
+  box-shadow: 0px 0px 20px 10px #ffffff;
 }
 .project-body {
-    width: 100%;
+  width: 100%;
 }
 .project-text {
-    width: 100%;
+  width: 100%;
 }
-.project-team {
-	margin-top: 1em;
-	text-transform: uppercase;	
-}
-.project-team-title{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-transform: uppercase;
-	font-weight: bold;
-	margin-bottom: 1em;
+.project-team{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 .project-team-members {
-    display: block;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .project-team-members-link {
-	margin: 1em;
-	justify-content: space-evenly;
-	width: 40%;
+  margin: auto 1em;
+  line-height: 1.875rem;
+  font-family: 'Bree', sans-serif;
+  font-weight: 700;
+}
+
+/******* SOCIAL JUSTICE *******/
+.pro-bono {
+  text-align: center;
+  text-transform: none;
+}
+.sj-link {
+  line-height: 1.875rem;
+	justify-content: flex-start;
+  font-family: 'Bree', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #433f3d;
+}
+.pro-bono-support {
+  text-align: center;
+  font-family: 'Bree', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #433f3d;
+}
+.sj-resource-title {
+  font-size: 1.5em;
 }
     
 /******** TEAM ********/
-.team-member-flip {
+.team-member-name {
+  padding-top: 18px;
+  padding-bottom: 8px;
+}
+.team-member-description {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.bio-social {
+  width: 100%;
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fab {
+  height: 30px;
+  color: #433f3d;
+}
+.bio-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 35%;
+  padding-bottom: 1em;
+  margin-top: 10px;
+}
+.bio-img img {
+  height: 200px;
+  width: 100%;
+	/*border-radius: 190px / 200px; Makes image rounded*/
+  object-fit: cover;
+  /* HJR: Added the border to be able to see the box-shadow clearly JEC: f27d52 changed color to make it more subtle */
+  /*border: #bbb1ac solid 1px;*/
+  box-shadow: 0px 0px 20px 10px #1a1a1a;
 }
 
 /******** CONTACT ********/
+#contact h2 {
+  width: 100%;
+  padding-bottom: 30px;
+}
 form {
-
-	margin-left: 5em;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	width: 80%;
+	width: 100%;
 }
-
 input, textarea {
 	font-family: p22-underground, sans-serif;
 	font-size: 1em;
@@ -341,146 +436,250 @@ input, textarea {
 	margin-top: 1.5em;
 	width: 100%;
 }
-
 label {
-	font-weight: bold;
+  font-family: 'Bree', sans-serif;
+  font-size: 1.25em;
+	font-weight: 700;
 	text-transform: uppercase;
 }
+label span {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: none;
+}
 .btn-div {
-	width: 50%;
-	margin: auto;
-	margin-top: -3em;
+	width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .btn {
-	border-radius: 2em;
-	font-family: p22-underground, sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f25934;
-    height: 2em;
+  width: 60%;
+	border-radius: 1em;
+	font-family: Bree, sans-serif;
+  font-size: 1.375em;
+  font-weight: bold;
+  color: #f25934;
+  height: 3em;
 	text-align: center;
-	veritcal-align: center;
+	vertical-align: center;
 }
 
 /*********************************************************
  Tablet Styles
 *********************************************************/
 @media only screen and (min-width: 768px) {
-     /***** PROJECT *****/
-     .project-team-members {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-flow: row wrap;
-    }
+  /***** MISSION *****/
+  #mission .container {
+    width: 88%;
+  }
+  .mission-heading-first {
+    width: 100%;
+  }
+  .mission-text {
+    width: 65%;
+  }
 
-    /***** TEAM *****/
-    .team-member {
-      display: block;
-    }
-    .bio-info {
-      padding-left: 0;
-    }
-    .bio-info p {
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-    .bio-img img {
-      max-width: 200px;
-      /*border-radius: 50%;*/
-      box-shadow: 3px 3px 10px #000000;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      background-color: #f2a488;
-      /*background-color: #f2a679; */
-    }
-    /* Making the bio images flip because I could.
-    .bio-img img:hover {
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      background-color: #f53737;
-    }
-    */
-    /*.team-member {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2em;
-    }*/
-    .bio-info {
-        padding-left: 2em;
-    }
-    .team-member-bio-img {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-flow: row;
-    }
-    .team-member-flip {
-      flex-flow: column;
-    }
-    .bio-social {
-      text-align: center;
-    }
+  /***** ABOUT *****/
+  .about h2 {
+    width: 100%;
+  }
 
-    .desk-nav {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 2.5em;
-      position: fixed;
-    }
-    .desk-nav-wrapper {
-      width: 95%;
-      margin: 0 auto;
-    }
-    .nav {
-      position: fixed;
-      padding-top: 2em;
-      padding-bottom: 2em;
-      z-index: 1000;
-      top: 0;
-      width: 100%;
-      /*  background-color: rgba(241,86,49,.1); */
-    }
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      list-style: none;
-    }
-    li a {
-      color: #000000;
-      display: block;
-      padding-left: 1em;
-      padding-right: 1em;
-      text-decoration: none;
-      font-weight: 900;
-      text-shadow: 0 3px 6px #F9F2ED;
-    }
-    li a:hover {
-      text-decoration: underline;
-      color: orange;
-      text-shadow: 1px 1px 3px #000; 
-    }
-    .home {
-      display: none;
-    }
+  /***** PROJECT *****/
+  .project-team {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row;
+  }
+  .project-team-members {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+  .project-image img {
+    width: 65%;
+  }
+  .project-text p {
+    width: 65%;
+    margin: 2.5em 17% auto 17%;
+  }
+
+  /***** SOCIAL JUSTICE *****/
+  #social-justice {
+    width: 88%;
+    margin: auto 5% auto 5%;
+  }
+  .social-justice-body {
+    width: 65%;
+    margin: 2.5em 17% auto 17%;
+  }
+  .sj-resource-title {
+    text-align: center;
+  }
+  .sj-link {
+    margin: 2.5em 17% auto 17%;
+  }
+
+  /***** TEAM *****/
+  #team {
+    width: 88%;
+    margin: auto 5% auto 5%;
+  }
+  .bio-info {
+    padding-left: 0;
+  }
+  .bio-info p {
+    width: 65%;
+    margin: auto 17% auto 17%;
+    padding-left: 2em;
+  }
+  .bio-img img {
+    max-width: 200px;
+    /*border-radius: 50%; JEC removed rounded corners per AL*/
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #f2a488;
+    /*background-color: #f2a679; */
+  }
+  /* Making the bio images flip because I could.
+  .bio-img img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-color: #f53737;
+  } */
+  .bio-social {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .bio-social a {
+    padding-right: 8%;
+  }
 
 }
-
-
 
 /* ==========================================================================
 Desktop Styles
 ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-    /* General Styles */
-    header {
-        height: 500px;
-    }
-   
+  /* General Styles */
+
+  /* Navigation */
+  .desk-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5em;
+    position: fixed;
+  }
+  .desk-nav-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .nav {
+    position: fixed;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    /*  background-color: rgba(241,86,49,.1); */
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+  li a {
+    color: #000000;
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: 0 3px 6px #F9F2ED;
+  }
+  li a:hover {
+    text-decoration: underline;
+    color: orange;
+    text-shadow: 1px 1px 3px #000; 
+  }
+  .home {
+    display: none;
+  }
+
+  /***** PROJECT *****/
+  #work {
+    width: 83%;
+    margin: auto 8% auto 8%;
+  }
+  .project {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row;
+  }
+  .project-image {
+    width: 60%;
+  }
+  .project-image img {
+    width: 65%;
+    height: 13.75em;
+  }
+  .project-body {
+    width: 45%;
+  }
+  .project-text h4 {
+    text-align: center;
+  }
+  .project-text p {
+    width: 100%;
+    margin: 0;
+  }
+
+  /***** SOCIAL JUSTICE *****/
+  .pro-bono {
+    font-size: 1.5em;
+  }
+  .pro-bono-support {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  /***** TEAM ******/
+  #team {
+    width: 66%;
+    margin: auto 16% auto 16%;
+  }
+  .bio-img-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+  }
+  .bio-img {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .bio-img {
+    max-width: 400px;
+  }
+  .bio-info {
+    width: 65%;
+  }
+  .bio-info p {
+    width: 100%;
+    margin: 0;
+  }
+
 }
 
 /* ==========================================================================

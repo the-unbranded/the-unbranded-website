@@ -36,11 +36,14 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <!--<link rel="stylesheet" href="https://use.typekit.net/lzh5gbk.css">-->
+
+  <!--FONTS-->
+  <link rel=“stylesheet” href=“https://use.typekit.net/upl4pmd.css”> <!--Bree Sans-serif, Omnes all-->
+  <link rel="stylesheet" href="https://use.typekit.net/lzh5gbk.css"> <!--p22 Underground Sans-serif-->
+  <script src="https://kit.fontawesome.com/fb44934dbd.js" crossorigin="anonymous"></script> <!--Icons-->
 
   <meta name="theme-color" content="#fafafa">
   
-  <script src="https://kit.fontawesome.com/fb44934dbd.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <script src="script.js"></script>
@@ -51,8 +54,8 @@
 
   <header>
 
-    <div class="mobile-nav mobile-nav-wrapper desk-nav desk-nav-wrapper">
-      <p><a href="#" class="home">HOME</a></p>
+    <div class="mobile-nav mobile-nav-wrapper">
+      <p><a href="#" class="home hidden"><i class="fas fa-home"></i></a></p>
       <div class="menu-toggle">
         <div class="hamburger"></div>
       </div>
@@ -63,7 +66,7 @@
       <img class="header-logo-img-2" src="img/the-unbranded-logo.png" alt="The Unbranded Logo">
     </div>
 
-    <nav class="nav">
+    <nav class="nav desk-nav desk-nav-wrapper">
       <ul>
         <li><a href="#mission">MISSION</a></li>     
         <li><a href="#work">OUR WORK</a></li>
@@ -97,18 +100,18 @@
           drive growth. As a collective of creators exploring new skills, we seek to work with fellow artists 
           who are also on the path to establishing their portfolios and brand identities.
         </p>
-        <p>
+        <p class="mission-text">
           The Unbranded was formed from a group of innovators who share a mindset of cooperation, ethical 
           business practices, and individualized, personal attention to client needs.
         </p>
-        <p>
+        <p class="mission-text">
           While we are still building our client base and skillset, we offer expert empathy, passion, and 
           upfront flat rates. A vital aspect of our mission is to offer pro-bono services to marginalized 
           business owners. <strong>We offer&colon; Website Development and Design &vert; <!--Video Conception, 
           Production and Editing &vert;--> Visual Design &vert; Copywriting &vert; <!--Content Marketing 
           Strategy--> Brand Cohesion.</strong>
         </p>
-        <p>
+        <p class="mission-text">
           *A note on diversity - we are proud of our current self-selecting team of four women but fully 
           acknowledge that there is more diversity to be incorporated. We look forward to increasing team 
           diversity as we grow and are focusing on a diverse client base in the meantime.
@@ -132,13 +135,13 @@
               a nature theme, something that conveys tranquility, knowledge, approachability, curiosity and a 
               little bit of whimsy." Built on Wix and handed off so client could self-manage, as requested.
             </p>
+            <h4>team members on project</h4>
             <div class="project-team">
-              <p class="project-team-title">team members on project</p>
               <div class="project-team-members">
-                <div class="project-team-members-link">
-                  <a href="#amelital">Amelita Lijek</a></div>
-                <div class="project-team-members-link">
-                  <a href="#heatherr">Heather Randolph</a></div>
+                <div class="project-team-members-link"><a href="#amelital">Amelita Lijek</a></div>
+              </div>
+              <div class="project-team-members">
+                <div class="project-team-members-link"><a href="#heatherr">Heather Randolph</a></div>
               </div>
             </div>
           </div>
@@ -153,16 +156,17 @@
         </div>
         <div class="project-body">
           <div class="project-text">
-            <p>Video editing and copywriting done for Etsy shop owner.</p>
+            <p>
+              Video editing and copywriting done for Etsy shop owner.
+            </p>
+            <h4>team members on project</h4>
             <div class="project-team">
-              <p class="project-team-title">team members on project</p>
               <div class="project-team-members">
-                <div class="project-team-members-link">
-                  <a href="sarahb">Sarah Beling</a></div>
-                <div class="project-team-members-link">
-                  <a href="emilyb">Emily Bradshaw</a></div>
-                <div class="project-team-members-link">
-                  <a href="amelital">Amelita Lijek</a></div>
+                <div class="project-team-members-link"><a href="sarahb">Sarah Beling</a></div>
+                <div class="project-team-members-link"><a href="emilyb">Emily Bradshaw</a></div>
+              </div>
+              <div class="project-team-members">
+                <div class="project-team-members-link"><a href="amelital">Amelita Lijek</a></div>
               </div>
             </div>
           </div>
@@ -172,17 +176,17 @@
       <h3>Robert Osborne Realestate</h3>
       <div class="project">
         <div class="project-image">
-          <a href="https://robertosbornerealestate.com/">
-            <img src="img/project-robert-osborne-realestate.png" alt="Robert Osborne Realestate Website Screenshot"></a>
+          <a href="https://robertosbornerealestate.com/"><img src="img/project-robert-osborne-realestate.png" alt="Robert Osborne Realestate Website Screenshot"></a>
         </div>
         <div class="project-body">
           <div class="project-text">
-            <p>This realty website was built for the client using WordPress.</p>
+            <p>
+              This realty website was built for the client using WordPress.
+            </p>
+            <h4>team members on project</h4>
             <div class="project-team">
-              <p class="project-team-title">team members on project</p>
               <div class="project-team-members">
-                <div class="project-team-members-link">
-                  <a href="heatherr">Heather Randolph</a></div>
+                <div class="project-team-members-link"><a href="heatherr">Heather Randolph</a></div>
               </div>
             </div>
           </div>
@@ -192,17 +196,17 @@
       <h3>Jenn Loves to Code Portfolio Site</h3>
       <div class="project">
         <div class="project-image">
-          <a href="https://jennlovestocode.com/">
-            <img src="img/project-jenn-loves-to-code.png" alt="Jenn Loves to Code Website Screenshot"></a>
+          <a href="https://jennlovestocode.com/"><img src="img/project-jenn-loves-to-code.png" alt="Jenn Loves to Code Website Screenshot"></a>
         </div>
         <div class="project-body">
           <div class="project-text">
-            <p>Portfolio website built to highlight client's projects including HTML, CSS3 and Python.</p>
+            <p>
+              Portfolio website built to highlight client's projects including HTML, CSS3 and Python.
+            </p>
+            <h4>team members on project</h4>
             <div class="project-team">
-              <p class="project-team-title">team members on project</p>
               <div class="project-team-members">
-                <div class="project-team-members-link">
-                  <a href="jenniferc">Jennifer Cameron</a></div>
+                <div class="project-team-members-link"><a href="jenniferc">Jennifer Cameron</a></div>
               </div>
             </div>
           </div>
@@ -212,18 +216,18 @@
       <h3>Police Brutality Awareness</h3>
       <div class="project">
         <div class="project-image">
-          <a href="https://pb-2020-app.herokuapp.com/">
-            <img src="img/project-police-brutality.png" alt="Police Brutality Awareness Website Screenshot"></a>
+          <a href="https://pb-2020-app.herokuapp.com/"><img src="img/project-police-brutality.png" alt="Police Brutality Awareness Website Screenshot"></a>
         </div>
         <div class="project-body">
           <div class="project-text">
-            <p>DO WE ALSO WANT TO INCLUDE THIS IN THE SOCIAL JUSTICE SECTION? Using Rails and API, this site was built to highlight incidents of police brutality that may not 
-              be covered by traditional news outlets, but are being reported on social media.</p>
+            <p>Using Rails and API, this site was built to 
+              highlight incidents of police brutality that may not be covered by traditional news outlets, but are being 
+              reported on social media.
+            </p>
+            <h4>team members on project</h4>
             <div class="project-team">
-              <p class="project-team-title">team members on project</p>
               <div class="project-team-members">
-                <div class="project-team-members-link">
-                  <a href="heatherr">Heather Randolph</a></div>
+                <div class="project-team-members-link"><a href="heatherr">Heather Randolph</a></div>
               </div>
             </div>
           </div>
@@ -243,7 +247,7 @@
         from traditionally marginalized groups, and we are always looking for new ways to incorporate positive 
         social justice change into the everyday workings of the business.
       </p>
-      <p>
+      <p class="social-justice-body">
         Below you will find links to groups that co-owners currently feel need a spotlight. These groups have 
         been vetted as far as any individual could vet a non-profit; we do not have resources beyond what an 
         individual is capable of researching and we reserve the right to rescind links as new information 
@@ -253,14 +257,13 @@
         to highlight more pressing issues, and links that we continue to support can be found on our Social 
         Justice Archive page. <!--ADD LINK ONCE PAGE CREATED-->
       </p>
-      <p>
-        <strong>NOT ON GOOGLE DOC: We strive to maintain a 4:1 paid to pro-bono project ratio, and have from 
-          our inception.
-        </strong>
-      </p>
-      <h2 class="social-justice-resource-title">SOCIAL JUSTICE RESOURCE LINKS</h2>
-      <div class="social-justice-link">
-        <a class="social-justice-link-item" href="https://pb-2020-app.herokuapp.com/">Police Brutality Awareness</a>
+      <h4 class="pro-bono">
+        We strive to maintain a 4:1 paid to pro-bono project ratio, and have from 
+        our inception.
+      </h4>
+      <h3 class="sj-resource-title">SOCIAL JUSTICE RESOURCE LINKS</h3>
+      <div class="sj-info">
+        <a class="sj-link" href="https://pb-2020-app.herokuapp.com/">Police Brutality Awareness</a>
         <p class="social-justice-body">
           We want to highlight incidents of police brutality that may not be covered by traditional news 
           outlets, but are being reported on social media.
@@ -273,42 +276,43 @@
       <div class="social-justice-link">
         <a class="social-justice-link-item" href="#">LINK</a>
         <p  class="social-justice-body">Description, why we support.</p>
-      </div>
-      <p>
-        NOT ON GOOGLE DOC: Please inquire if you are interested in further supporting a pro-bono project
+      </div>-->
+      <p class="pro-bono-support">
+        Please inquire if you are interested in further supporting a pro-bono project
         through your paid project.
         <br>We are always looking to help make these connections happen!
-      </p>-->
+      </p>
     </section>
 
     <section class="container" id="team">
       <h2>THE TEAM</h2>
-      <!--<p>Overview of team, how we collected ourselves and got together. Overview of team, how we collected ourselves and got together. Overview of team, how we collected ourselves and got together. Overview of team, how we collected ourselves and got together.</p> -->
-      <!--20210120 Added "team-member-flip" class to invert order of social links to pic and bio per mobile, tablet and desktop comps-->
+      <!--<p>Overview of team, how we collected ourselves and got together. Overview of team, how we collected ourselves 
+        and got together. Overview of team, how we collected ourselves and got together. Overview of team, how we collected 
+        ourselves and got together.</p> -->
+      <!--20210120 Added "team-member-flip" class to invert order of social links to pic and bio per mobile, tablet and 
+        desktop comps-->
 
       <div class="team-member">
         <div class="team-member-bio">
-          <h3 class="team-member-name" id="sarahb">SARAH BELING</h3>
-          <p class="team-member-description">Founder Advisor</p>
-          <p class="team-member-description">Copywriting</p>
-        </div>
-        <div class="team-member-flip">
-          <div class="team-member-bio-img">
-            <div>
-              <span class="bio-img">
-                <img src="img/sb_headshot2.jpg" alt="Sarah Beling">
-              </span>
-            </div>
-            <div class="bio-info">
-              <p>Enamored at a young age with storytelling, Sarah tortured her family and friends throughout the 90s with re-worked 
-                revivals of classics like <em>The Wizard of Oz</em> and <em>Annie</em> (in which she gracefully accepted the title role). 
-                Sarah eventually moved to New York, attended NYU Tisch to study acting, threw out all of her clothing that wasn’t black, 
-                and developed a taste for bodega breakfast sandwiches. Sarah writes plays that range from thriller to 80s musical parody 
-                and is eager to help others tell their stories.</p>
-            </div>
+          <div>
+            <h3 class="team-member-name" id="sarahb">SARAH BELING</h3>
+            <h4 class="team-member-description">Founder Advisor</h4>
+            <h4 class="team-member-description">Copywriting</h4>
           </div>
           <div class="bio-social">
             <a href="www.linkedin.com/in/sarah-beling-6b0416b2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="bio-img-info">
+          <div class="bio-img">
+              <img src="img/sb_headshot2.jpg" alt="Sarah Beling">
+          </div>
+          <div class="bio-info">
+            <p>Enamored at a young age with storytelling, Sarah tortured her family and friends throughout the 90s with re-worked 
+              revivals of classics like <em>The Wizard of Oz</em> and <em>Annie</em> (in which she gracefully accepted the title role). 
+              Sarah eventually moved to New York, attended NYU Tisch to study acting, threw out all of her clothing that wasn’t black, 
+              and developed a taste for bodega breakfast sandwiches. Sarah writes plays that range from thriller to 80s musical parody 
+              and is eager to help others tell their stories.</p>
           </div>
         </div>
       </div>
@@ -335,30 +339,26 @@
 
       <div class="team-member">
         <div class="team-member-bio">
-          <h3 class="team-member-name" id="jenniferc">Jennifer Cameron</h3>
-          <p class="team-member-description">Web Development</p>
-        </div>
-        <div class="team-member-flip">
-          <div class="team-member-bio-img">
-            <div>
-              <span class="bio-img">
-                <img src="img/jc_headshot2.jpg" alt="Jennifer Cameron">
-              </span>
-            </div>
-            <div class="bio-info">
-              <p>A reluctant "techy," Jennifer started life with a strong emphasis on the arts: painting, acting, dance, and drawing 
-                (including an unfortunate incident involving a sharpie and her parent's carpet). However, a strong desire and affinity 
-                for logic and tech activities flowed though all aspects of life, school and work until she could no longer deny the 
-                pull and jumped into the world of web development. Jennifer now focuses on feeding both parts of her soul by creating 
-                things that are pleasing and functional.</p>
-            </div>
-          </div>
           <div>
-            <div class="bio-social">
-              <a href="https://github.com/jcameron2486" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/jennlovestocode" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://www.instagram.com/jenncat" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
+            <h3 class="team-member-name" id="jenniferc">Jennifer Cameron</h3>
+            <h4 class="team-member-description">Web Development</h4>
+          </div>
+          <div class="bio-social">
+            <a href="https://github.com/jcameron2486" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jennlovestocode" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/jenncat" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="bio-img-info">
+          <div class="bio-img">
+            <img src="img/jc_headshot2.jpg" alt="Jennifer Cameron">
+          </div>
+          <div class="bio-info">
+            <p>A reluctant "techy," Jennifer started life with a strong emphasis on the arts: painting, acting, dance, and drawing 
+              (including an unfortunate incident involving a sharpie and her parent's carpet). However, a strong desire and affinity 
+              for logic and tech activities flowed though all aspects of life, school and work until she could no longer deny the 
+              pull and jumped into the world of web development. Jennifer now focuses on feeding both parts of her soul by creating 
+              things that are pleasing and functional.</p>
           </div>
         </div>
       </div>
@@ -384,67 +384,63 @@
       
       <div class="team-member">
         <div class="team-member-bio">
-          <h3 class="team-member-name" id="amelital">AMELITA LIJEK</h3>
-          <p class="team-member-description">Founder</p>
-          <p class="team-member-description">Business Ops and Design</p>
-        </div>
-        <div class="team-member-flip">
-          <div class="team-member-bio-img">
-            <div>
-              <span class="bio-img">
-                <img src="img/al_headshot3.jpg" alt="Amelita Lijek">
-              </span>
-            </div>
-            <div class="bio-info">
-              <p>Amelita has always had an instinct for management and organization. Beginning her executive career at age four when 
-                she dutifully (and, in retrospect, likely annoyingly) pointed out who was off of their line in ballet class, she has 
-                honed that intuition through a wide variety of jobs – working in everything from retail and fine dining to musical 
-                comedy and film production, with pit stops along the way to pick up some dog training skills and an undergrad degree 
-                from NYU. Her non-traditional path (though stressful for her parents) has taught her that following her gut when it 
-                comes to ethical values is essential and that this principle too often gets lost within workplaces. While pivoting 
-                to coding and design in the chaos of 2020, the idea for The Unbranded presented itself as an opportunity to 
-                constructively exercise her management skills, and more importantly put her values into practice. She is incredibly 
-                grateful and excited to get to do both with such a remarkable team beside her.</p>
-              <!-- Amelita Alternative Bio: Beginning her executive career at age four when she dutifully pointed out who was off of 
-                their line in ballet class, Amelita has honed her intuition for management through a wide variety of jobs – working 
-                in everything from retail to film production. Her non-traditional path has taught her that following her gut when it 
-                comes to ethical values is essential and that this principle too often gets lost within workplaces. While pivoting 
-                to coding and design in the chaos of 2020, the idea for The Unbranded presented itself as an opportunity to 
-                constructively exercise her management skills, and more importantly put her values into practice. She is incredibly 
-                grateful to get to do both with such a remarkable team.-->
-            </div>
+          <div>
+            <h3 class="team-member-name" id="amelital">AMELITA LIJEK</h3>
+            <h4 class="team-member-description">Founder</h4>
+            <h4 class="team-member-description">Business Ops and Design</h4>
           </div>
           <div class="bio-social">
             <a href="https://www.twitter.com/aaaamelita" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/aaaamelita" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
+        <div class="bio-img-info">
+          <div class="bio-img">
+            <img src="img/al_headshot3.jpg" alt="Amelita Lijek">
+          </div>
+          <div class="bio-info">
+            <p>Amelita has always had an instinct for management and organization. Beginning her executive career at age four when 
+              she dutifully (and, in retrospect, likely annoyingly) pointed out who was off of their line in ballet class, she has 
+              honed that intuition through a wide variety of jobs – working in everything from retail and fine dining to musical 
+              comedy and film production, with pit stops along the way to pick up some dog training skills and an undergrad degree 
+              from NYU. Her non-traditional path (though stressful for her parents) has taught her that following her gut when it 
+              comes to ethical values is essential and that this principle too often gets lost within workplaces. While pivoting 
+              to coding and design in the chaos of 2020, the idea for The Unbranded presented itself as an opportunity to 
+              constructively exercise her management skills, and more importantly put her values into practice. She is incredibly 
+              grateful and excited to get to do both with such a remarkable team beside her.</p>
+            <!-- Amelita Alternative Bio: Beginning her executive career at age four when she dutifully pointed out who was off of 
+              their line in ballet class, Amelita has honed her intuition for management through a wide variety of jobs – working 
+              in everything from retail to film production. Her non-traditional path has taught her that following her gut when it 
+              comes to ethical values is essential and that this principle too often gets lost within workplaces. While pivoting 
+              to coding and design in the chaos of 2020, the idea for The Unbranded presented itself as an opportunity to 
+              constructively exercise her management skills, and more importantly put her values into practice. She is incredibly 
+              grateful to get to do both with such a remarkable team.-->
+          </div>
+        </div>
       </div>
 
       <div class="team-member">
         <div class="team-member-bio">
-          <h3 class="team-member-name" id="heatherr">HEATHER RANDOLPH</h3>
-          <p class="team-member-description">Web Development</p>
-        </div>
-        <div class="team-member-flip">
-          <div class="team-member-bio-img">
-            <div>
-              <span class="bio-img">
-                <img src="img/hjr_headshot3.jpg" alt="Heather J. Randolph">
-              </span>
-            </div>
-            <div class="bio-info">
-              <p>Heather is a Web Developer, Visual Designer, and Writer with a passion for storytelling in visual and narrative 
-                formats. She has been building websites since 1997 and taking clients on a freelance basis since 2002. While her 
-                development expertise lies in HTML and CSS, Heather also works with JavaScript, jQuery, Ruby, and Rails. She creates 
-                visual art with Photoshop and Illustrator.<br>When Heather isn’t writing, developing, or designing, she can be found 
-                cooking with her nephews, listening to technology or HP Lovecraft centric podcasts, or scrolling through Netflix 
-                trying to decide what to watch.</p>
-            </div>
+          <div>
+            <h3 class="team-member-name" id="heatherr">HEATHER RANDOLPH</h3>
+            <h4 class="team-member-description">Web Development</h4>
           </div>
           <div class="bio-social">
             <a href="https://www.twitter.com/Anypocalypse" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/thespeia/" target="_blank"><i class="fab fa-instagram"></i></a> 
+          </div>
+        </div>
+        <div class="bio-img-info">
+          <div class="bio-img">
+            <img src="img/hjr_headshot3.jpg" alt="Heather J. Randolph">
+          </div>
+          <div class="bio-info">
+            <p>Heather is a Web Developer, Visual Designer, and Writer with a passion for storytelling in visual and narrative 
+              formats. She has been building websites since 1997 and taking clients on a freelance basis since 2002. While her 
+              development expertise lies in HTML and CSS, Heather also works with JavaScript, jQuery, Ruby, and Rails. She creates 
+              visual art with Photoshop and Illustrator.<br>When Heather isn’t writing, developing, or designing, she can be found 
+              cooking with her nephews, listening to technology or HP Lovecraft centric podcasts, or scrolling through Netflix 
+              trying to decide what to watch.</p>
           </div>
         </div>
       </div>
@@ -457,20 +453,20 @@
       <p>We would love to hear from you! Fill out the form below and we'll get back to you as
       soon as possible.</p>
 
-      <form action="mailto:hjrandolph@gmail.com" method="post" enctype="text/plain">
+      <form action="mailto:contact@the-unbranded.com" method="post" enctype="text/plain">
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name" placeholder="John Doe" required><br>
 
         <label for="email">Email</label><br>
         <input type="email" id="email" name="email" placeholder="John_Doe@example.com" required><br>
 
-        <label for="request"><span>What services are you interested in?</span>
-        <br>Our non-exhaustive list of services includes: design, development, copywriting, video editing,
-        logo animation...</label><br>
+        <label for="request">What services are you interested in?
+        <br><span>Our non-exhaustive list of services includes: design, development, copywriting, video editing,
+        logo animation...</span></label><br>
         <textarea id="request" name="request" rows="4" cols="35" maxlength="6000" required></textarea><br>
 
-        <label for="conumber"><span>How many people are in your company?</span> <br>
-           If this is a personal project, enter 0.</label><br>
+        <label for="conumber">How many people are in your company?<br>
+          <span>If this is a personal project, enter 0.</span></label><br>
         <input type="number" id="conumber" name="conumber"><br>
         <label for="details">Please share any other details about the project that you'd like to discuss.</label><br>
         <textarea id="details" name="details" rows="4" cols="35"></textarea>
@@ -482,7 +478,7 @@
 
 
     <footer>
-      <div class="footer">
+      <div id="mail" class="footer-hidden">
        <p> <a class="footer-email" href="mailto:contact@the-unbranded.com"><i class="fas fa-envelope"></i></a></p>
       </div>
     </footer>
