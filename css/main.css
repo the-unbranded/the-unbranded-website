@@ -104,11 +104,11 @@ body {
    
     /* Dark to light gradient */
     background: linear-gradient(#f25934 0%,  #f27d52 35%, #f2a488 65%, #f9f2ed 100%),
-    url(http://www.transparenttextures.com/patterns/beige-paper.png);
-    
+    url(../img/beige-paper.png);
+  
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     /* background: linear-gradient(#f9f2ed 0%,  #f2a488 35%, #f27d52 90%, #f25934 100%);*/
-    background-blend-mode:overlay;
+    background-blend-mode: overlay;
 }
 img {
     max-width: 90%;
