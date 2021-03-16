@@ -1,3 +1,4 @@
+  /* HAMBURGER MENU CODE */
 $(document).ready(function(){
 
      //Open hamburger menu on click
@@ -19,6 +20,8 @@ $(document).ready(function(){
 });
 
 
+
+/* SCROLL FUNCTION TO FADE IMAGE */
 $(window).scroll(function() {  //update this so that the logo stops fading at about 30%
     var scrollTop = $(this).scrollTop();
 
@@ -27,19 +30,25 @@ $(window).scroll(function() {  //update this so that the logo stops fading at ab
             var elementHeight = $(this).height(),
             opacity = ((elementHeight - scrollTop) / elementHeight);
             return opacity;
-        } 
+        
+        
+        }
+        
+    
 });
 
+/* SCROLL FUNCTION TO SHOW/HIDE HOME LINK AND FOOTER */
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
         if (scroll >= 500) {
             $(".hidden").removeClass("hidden");
         }
     if (scroll <= 500) {
-        $(".footer").addClass("hidden");
+        $(".footer__email").addClass("hidden");
         $(".home").addClass("hidden");
     }
 })
-        
+
     });
+    
     

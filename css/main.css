@@ -92,15 +92,19 @@
   box-sizing: border-box;
 }
 header {
-  height: 100vh;
+    height: 100vh;
 }
 body {
-  margin: 0;
-  padding: 0;
-  /* Dark to light gradient */
-	background: linear-gradient(#f25934 0%,  #f27d52 35%, #f2a488 65%, #f9f2ed 100%);
-  /* background: linear-gradient
-  (#f9f2ed 0%,  #f2a488 35%, #f27d52 90%, #f25934 100%);*/
+    margin: 0;
+    padding: 0;
+   
+    /* Dark to light gradient */
+    background: linear-gradient(#f25934 0%,  #f27d52 35%, #f2a488 65%, #f9f2ed 100%),
+    url(../img/beige-paper.png);
+  
+    
+    /* background: linear-gradient(#f9f2ed 0%,  #f2a488 35%, #f27d52 90%, #f25934 100%);*/
+    background-blend-mode: overlay;
 }
 img {
   max-width: 90%;
@@ -132,6 +136,7 @@ h3 {
 h4 {
   font-size: 1em;
 }
+
 p {
   font-family: "omnes-pro", sans-serif;
   font-size: 1em;
@@ -143,6 +148,10 @@ p {
 }
 
 /* Navigation */  
+
+
+
+@media (max-width: 1199px){
 .mobile-nav {
   display: flex;
   justify-content: space-between;
@@ -162,7 +171,7 @@ p {
   right: 5%;
   /*Navigation hidden on mobile*/
   clip-path: circle(0px at top right);
-  transition: clip-path ease-in-out 750ms;
+  transition: clip-path ease-in-out 600ms;
 }
     
 /*Navigation open on click*/
@@ -173,12 +182,12 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 350px;
   height: 450px;
   border-radius: 50%;
   background: #f2e9e3;
   filter: drop-shadow(0 0 30px #fff);
+  list-style: none;
 }    
 li a {
   text-decoration: none;
@@ -192,20 +201,21 @@ li a {
 .menu-toggle {
   padding: 1em 0;
   top: 1.5em;
-  left: 1.5em;
+  right: 1.5em;
   cursor: pointer;
+  position: absolute;
 }   
 /* Three horizontal lines for hamburger*/
 .hamburger,
 .hamburger::before,
 .hamburger::after {
   content: '';
-  display: block;
   background: white;
   height: 3px;
-  width: 1.75em;
+  width: 2em;
   border-radius: 3px;
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 600ms;
+  display: block;
 }   
 /* Top Line */
 .hamburger::before {
@@ -221,6 +231,7 @@ li a {
 }  
 /* Top line gone */
 .open .hamburger::before {
+  transform: rotate(-90deg);
   opacity: 0;
 } 
 /* Bottom line rotates */
@@ -228,25 +239,25 @@ li a {
   transform: translateY(-3px) rotate(-90deg);
 }  
 .home {
-  /* This places the HOME button in the top left */
+  /* This places HOME button in the top left
   padding-left: 2em;
   color: #fff;
   text-decoration: none;
   font-weight: 900;
   text-shadow: 0 3px 6px #000000;
-  margin: 0;
+  */
 
-  /* This places HOME button in the bottom right
+  /* This places HOME button in the bottom right */
   position: fixed;
-  padding: 2em;
   color: #fff;
   text-decoration: none;
   font-weight: 900;
   text-shadow: 0 3px 6px #000000;
-  bottom: 3em;
-  right: 0; */
+  bottom: 1.75em;
+  right: 1em;
+        
 }
-
+}
 /******** HEADER ********/
 .header-logo {
   padding-top: 13.5em;
@@ -271,12 +282,12 @@ footer {
   width: 100%;
   position: fixed;
   padding-left: 2em;
-  padding-bottom: 2em;
+  /* padding-bottom: 2em; */
   color: #fff;
   text-decoration: none;
   font-weight: 900;
   text-shadow: 0 3px 6px #000000;
-	bottom: 2em;
+  bottom: 2em;
 }
 .footer {
   text-align: right;
@@ -289,7 +300,9 @@ footer {
 .show {
   display: block;
 }
-
+.show {
+  display: block;
+}
 /******** MISSION ********/
 .container {
   width: 65%;
