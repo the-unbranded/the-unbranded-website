@@ -118,7 +118,7 @@ img {
 h2,
 h3,
 h4 {
-  font-family: "Bree", sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-weight: 700;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -145,6 +145,11 @@ p {
   line-height: 1.5;
   text-align: justify;
   color: #433f3d;
+}
+a {
+  font-family: 'Arsenal', sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 /* Navigation */  
@@ -195,6 +200,7 @@ li a {
   display: block;
   padding: 1em;
   font-weight: 900;
+  font-family: 'Arsenal', sans-serif;
 }
     
 /**** Hamburger Menu ****/
@@ -253,8 +259,8 @@ li a {
   text-decoration: none;
   font-weight: 900;
   text-shadow: 0 3px 6px #000000;
-  bottom: 1.75em;
-  right: 1em;
+  bottom: 2em;
+  right: 2em;
         
 }
 }
@@ -294,8 +300,11 @@ footer {
   padding-right: 2em;
 }
 .footer-email {
+  position: fixed;
   color: white;
   text-decoration: none;
+  bottom: 2em;
+  left: 2em;
 }
 .show {
   display: block;
@@ -317,13 +326,16 @@ footer {
 #work h2 {
   padding-bottom: 1.875rem;
 }
+#work h3 {
+  margin: 4em auto 1.5em auto;
+}
 .project {
   width: 100%;
   display: flex;
   justify-content: justify;
   align-items: center;
   flex-flow: row wrap;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 .project-image {
   display: flex;
@@ -344,20 +356,35 @@ footer {
   object-fit: cover;
   /* HJR: Added the border to be able to see the box-shadow clearly JEC: f27d52 changed color to make it more subtle */
   border: #bbb1ac solid 1px;
-  box-shadow: 0px 0px 20px 10px #ffffff;
+  box-shadow: 0px 0px 70px 20px #ffffff/*1a1a1a*/;
 }
 .project-body {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 .project-text {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.project h4 {
+  text-align: center;
 }
 .project-team{
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row wrap;
+}
+.project-team-member {
+  width: 100%;
+  text-align: center;
 }
 .project-team-members {
   width: 100%;
@@ -366,7 +393,7 @@ footer {
 .project-team-members-link {
   margin: auto 1em;
   line-height: 1.875rem;
-  font-family: 'Bree', sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-weight: 700;
 }
 
@@ -378,15 +405,19 @@ footer {
 .sj-link {
   line-height: 1.875rem;
 	justify-content: flex-start;
-  font-family: 'Bree', sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   color: #433f3d;
 }
+.sj-a {
+  text-decoration: none;
+  color: #433f3d;
+}
 .pro-bono-support {
   text-align: center;
-  font-family: 'Bree', sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #433f3d;
@@ -394,8 +425,18 @@ footer {
 .sj-resource-title {
   font-size: 1.5em;
 }
+.sj-info {
+  margin-top: 2.5em;
+}
+
     
 /******** TEAM ********/
+#team h2 {
+  padding-bottom: 0;
+}
+.team-member-bio {
+  margin-top: 4em;
+}
 .team-member-name {
   padding-top: 18px;
   padding-bottom: 8px;
@@ -429,7 +470,7 @@ footer {
   object-fit: cover;
   /* HJR: Added the border to be able to see the box-shadow clearly JEC: f27d52 changed color to make it more subtle */
   /*border: #bbb1ac solid 1px;*/
-  box-shadow: 0px 0px 20px 10px #1a1a1a;
+  box-shadow: 0px 0px 70px 20px #ffffff/*1a1a1a*/;
 }
 
 /******** CONTACT ********/
@@ -450,13 +491,13 @@ input, textarea {
 	width: 100%;
 }
 label {
-  font-family: 'Bree', sans-serif;
+  font-family: 'Arsenal', sans-serif;
   font-size: 1.25em;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 label span {
-  font-size: 1em;
+  font-size: 0.75em;
   font-weight: 400;
   text-transform: none;
 }
@@ -468,9 +509,9 @@ label span {
 }
 
 .btn {
-  width: 60%;
+  width: fit-content;
 	border-radius: 1em;
-	font-family: Bree, sans-serif;
+	font-family: 'Arsenal', sans-serif;
   font-size: 1.375em;
   font-weight: bold;
   color: #f25934;
@@ -529,13 +570,16 @@ label span {
   }
   .social-justice-body {
     width: 65%;
-    margin: 2.5em 17% auto 17%;
+    margin: 0em 17% auto 17%;
   }
   .sj-resource-title {
     text-align: center;
   }
   .sj-link {
     margin: 2.5em 17% auto 17%;
+  }
+  .pro-bono-support {
+    margin: auto 10%;
   }
 
   /***** TEAM *****/
@@ -547,9 +591,7 @@ label span {
     padding-left: 0;
   }
   .bio-info p {
-    width: 65%;
-    margin: auto 17% auto 17%;
-    padding-left: 2em;
+    margin: 1em 0 auto 17%;
   }
   .bio-img img {
     max-width: 200px;
@@ -573,6 +615,27 @@ label span {
   }
   .bio-social a {
     padding-right: 8%;
+  }
+  .bio-img-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row;
+  }
+
+  /***** CONTACT *****/
+  #contact {
+    width: 88%;
+    margin: auto 5% auto 5%;
+  }
+  #contact p {
+    text-align: center;
+    width: 65%;
+    margin: 0em 17% auto 17%;
+  }
+  #contact form {
+    width: 65%;
+    margin: 0em 17% auto 17%;
   }
 
 }
@@ -621,7 +684,7 @@ Desktop Styles
   }
   li a:hover {
     text-decoration: underline;
-    color: orange;
+    color: white;
     text-shadow: 1px 1px 3px #000; 
   }
   .home {
@@ -656,6 +719,9 @@ Desktop Styles
     width: 100%;
     margin: 0;
   }
+  .project-team-members-link {
+    width: 100%;
+  }
 
   /***** SOCIAL JUSTICE *****/
   .pro-bono {
@@ -671,26 +737,18 @@ Desktop Styles
     width: 66%;
     margin: auto 16% auto 16%;
   }
-  .bio-img-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-  }
   .bio-img {
     width: 35%;
     display: flex;
-    justify-content: center;
-  }
-  .bio-img {
+    justify-content: flex-start;
     max-width: 400px;
-  }
-  .bio-info {
-    width: 65%;
   }
   .bio-info p {
     width: 100%;
     margin: 0;
+  }
+  .bio-social{
+    max-width: 400px;
   }
 
 }
